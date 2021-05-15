@@ -1,0 +1,9 @@
+com_count,pop_size,sel_size,off_size_ga,off_size_eda,mut_prob,selection,update,crossover,mutation,fitness,time
+2,30,15,15,15,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.335634362329401,269.35304431915284
+2,30,20,15,15,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.3108443573571895,259.4220157146454
+2,40,15,20,20,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.31990408796858844,269.4507111549377
+2,40,20,20,20,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.31039669486868426,268.0205087184906
+100,30,15,15,15,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.9492247223848578,627.8081226348877
+100,30,20,15,15,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.9489508421213337,711.9957451343537
+100,40,15,20,20,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.9499343494820703,522.9310568809509
+100,40,20,20,20,0.01,roulette_selection,elitism_update,one_point_crossover,bit_mutation,0.9495811867992204,573.305272102356
