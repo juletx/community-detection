@@ -1,4 +1,4 @@
-setwd("/Users/JosuC/Dropbox/EHU/Research/Supervision_Colaboration/Valentino/Gradient_search_in_PL/Experiments_Workshop/comparison")
+setwd("G:/Mi unidad/Ingeniaritza Informatikoa/4. Maila/2. Lauhilekoa/BH/Proiektua - Community Detection/bayesian_analysis")
 
 ## load full set of data
 results_bks<-read.csv(file="best_known_results.csv",header=TRUE,sep=";",stringsAsFactor=FALSE)
@@ -23,7 +23,8 @@ for (i in 1:length(results_median$Instance))
 results_median_PLEDA<-results_median[results_median$Algorithm=="PLEDA",]
 results_median_Gradient<-results_median[results_median$Algorithm!="PLEDA",]
 
-library("scmamp")
+source("bayesian.R")
+source("plotting.R")
 library("ggplot2")
 library(latex2exp)
 test.results <- bSignedRankTest(x=results_median_PLEDA$Normalized, y=results_median_Gradient$Normalized, rope=c(-0.0001, 0.0001))
@@ -35,4 +36,3 @@ colMeans(test.results$posterior)
 plot(density(test.results$posterior$Right),xlim=c(0,1), ylim=c(0,40))
 lines(density(test.results$posterior$Left))
 lines(density(test.results$posterior$Rope))
-
